@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script type="text/babel">
+      function Test() {
+        const test = () => {
+        alert("test");
+      };
+        return <button onClick={test}>Click me</button>;
+      }
+      class Hello extends React.Component {
+        render() {
+          return (
+            <div>
+              Hello React WIth Code <Test />
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<Hello />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
