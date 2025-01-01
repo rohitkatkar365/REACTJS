@@ -1,0 +1,29 @@
+.cart{
+    height: 100px;
+    width: 400px;
+    border: 1px solid lawngreen;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.cart-wrapper{
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.btn-wrapper button{
+background-color: aqua;
+padding: 10px;
+}
+.btn-wrapper{
+    padding-top: 20px;
+    padding-right: 130px;
+}
+.text-wrapper{
+    padding-top: 20px;
+}
